@@ -1,17 +1,17 @@
 .title {
-    font-size: 24px;
-    text-align: center;
-    margin: 35px 0;
+  font-size: 24px;
+  text-align: center;
+  margin: 35px 0;
 }
 
 .cardsList {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1000px) {
-    .cardsList {
-        justify-content: space-evenly;
-    }
+  .cardsList {
+    justify-content: space-evenly;
+  }
 }
