@@ -1,0 +1,31 @@
+.card {
+    padding: 0 20px;
+    margin-bottom: 65px;
+}
+
+.cardImage {
+    width: 260px;
+}
+
+.cardTitle {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+}

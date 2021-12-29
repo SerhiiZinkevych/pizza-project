@@ -1,0 +1,53 @@
+.sort {
+    position: relative;
+}
+
+.sortLabel span {
+    color: var(--orange);
+    border-bottom: 1px dashed var(--orange);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sortLabel span:hover ~ .sortPopup,
+.sortLabel span:focus ~ .sortPopup {
+    display: block;
+}
+
+.sortLabel img,
+.sortLabel b {
+    margin-right: 5px;
+}
+
+.sortPopup {
+    display: none;
+    background-color: #fff;
+    top: 18px;
+    right: 0;
+    position: absolute;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+.sortPopup:hover,
+.sortPopup:focus {
+    display: block;
+}
+
+.sortItem {
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.active {
+    composes: sortItem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.sortItem.active,
+.sortItem:hover,
+.sortItem:focus {
+    background: rgba(254, 95, 30, 0.05);
+}

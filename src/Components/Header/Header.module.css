@@ -1,45 +1,22 @@
 .header {
-  display: flex;
-  justify-content: space-between;
+    border-bottom: 1px solid #f6f6f6;
+    margin-bottom: 30px;
 }
 
-.logo {
-  display: flex;
+.container {
+    composes: container from '../../css/index.css';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
 }
 
-.logoTitle {
-  padding-left: 20px;
-}
+@media (max-width: 640px) {
+    .header {
+        margin-bottom: 0;
+    }
 
-.logoTitle h1 {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #181818;
-}
-
-.logoTitle p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: #7b7b7b;
-}
-
-.logoTitle h1,
-.logoTitle p {
-  margin: 0;
-  padding: 0;
-}
-.buttonCart {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-
-  color: #ffffff;
-  background: #fe5f1e;
-  border-radius: 30px;
+    .header .container {
+        flex-direction: column;
+    }
 }

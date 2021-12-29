@@ -1,0 +1,46 @@
+.button {
+    composes: button from '../../css/index.css';
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--orange);
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.button:hover .qty,
+.button:focus .qty {
+    background-color: #fff;
+    color: var(--orange);
+}
+
+.button:hover svg path {
+    fill: #fff;
+}
+
+.button svg {
+    margin-right: 5px;
+}
+
+.button .qty {
+    display: inline-block;
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 22px;
+    margin-left: 5px;
+}

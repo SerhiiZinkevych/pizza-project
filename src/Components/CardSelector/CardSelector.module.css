@@ -1,0 +1,25 @@
+.cardSelector {
+    background-color: var(--grayBgnd);
+    padding: 6px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cardSelector ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 500;
+}
+
+.cardSelector ul li {
+    width: 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.active {
+    composes: cardSelector;
+    background-color: #fff;
+    border-radius: 5px;
+}

@@ -1,0 +1,26 @@
+.button {
+    composes: button from '../../css/index.css';
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: var(--orange);
+    font-size: 17px;
+    padding: 13px 25px;
+    font-weight: bold;
+}
+
+.button:hover,
+.button:focus {
+    background: var(--darkenOrange);
+}
+
+.button img {
+    margin-right: 10px;
+}
+
+.delimiter {
+    width: 1px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.25);
+    margin: 0 15px;
+}
