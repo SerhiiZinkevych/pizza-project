@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Button from '../Button/Button';
-import CardSelector from '../CardSelector/CardSelector';
+import { Button, CardSelector } from '../';
 
 import styles from './Card.module.css';
 import pizza from '../../assets/img/pizza1.png';

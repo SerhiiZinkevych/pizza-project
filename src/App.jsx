@@ -1,4 +1,4 @@
-import Header from './Components/Header/Header';
+import { Header } from './Components';
 import Home from './Pages/Home/Home';
 
 function App() {

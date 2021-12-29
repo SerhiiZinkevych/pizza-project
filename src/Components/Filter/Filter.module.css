@@ -21,6 +21,10 @@
     background-color: var(--black);
     color: #fff;
 }
+.active:hover {
+    background-color: var(--black);
+    color: #fff;
+}
 
 @media (max-width: 1200px) {
     .button {

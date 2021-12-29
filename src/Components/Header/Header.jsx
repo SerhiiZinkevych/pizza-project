@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
-import ButtonCart from '../ButtonCart/ButtonCart';
-import Logo from '../Logo/Logo';
+
+import { ButtonCart, Logo } from '../';
 
 export default function Header() {
     return (
