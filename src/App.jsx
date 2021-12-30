@@ -1,5 +1,6 @@
 import { Header } from './Components';
 import Home from './Pages/Home/Home';
+import Cart from './Pages/Cart/Cart';
 
 function App() {
     return (
@@ -7,7 +8,8 @@ function App() {
             <div className="wrapper">
                 <Header />
                 <main className="container">
-                    <Home />
+                    {/* <Home /> */}
+                    <Cart />
                 </main>
             </div>
         </>
