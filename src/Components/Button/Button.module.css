@@ -1,46 +1,113 @@
 .button {
-    composes: button from '../../css/index.css';
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: #fff;
-    border: 1px solid var(--orange);
-    color: var(--orange);
-    font-weight: bold;
-    font-size: 16px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-align: center;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
-.button:hover,
-.button:focus {
-    background-color: var(--orange);
-    color: #fff;
-    border: 1px solid transparent;
+.buttonOutline {
+  composes: button;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.button:hover .qty,
-.button:focus .qty {
-    background-color: #fff;
-    color: var(--orange);
+.buttonOutline:hover,
+.buttonOutline:focus {
+  background-color: var(--orange);
+  color: #fff;
+  border: 1px solid transparent;
 }
 
-.button:hover svg path {
-    fill: #fff;
+.buttonOutline:hover span,
+.buttonOutline:focus span {
+  background-color: #fff;
+  color: var(--orange);
 }
 
-.button svg {
-    margin-right: 5px;
+.buttonOutline:hover svg path {
+  fill: #fff;
 }
 
-.button .qty {
-    display: inline-block;
-    background-color: var(--orange);
-    color: #fff;
-    border-radius: 50%;
-    width: 22px;
-    height: 22px;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 22px;
-    margin-left: 5px;
+.buttonOutline svg {
+  margin-right: 5px;
+}
+
+.buttonOutline span {
+  display: inline-block;
+  background-color: var(--orange);
+  color: #fff;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 22px;
+  margin-left: 5px;
+}
+
+.buttonOrange {
+  composes: button;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: var(--orange);
+  font-size: 17px;
+  padding: 13px 25px;
+  font-weight: bold;
+}
+
+.buttonOrange:hover,
+.buttonOrange:focus {
+  background: var(--darkenOrange);
+}
+
+.buttonOrange img {
+  margin-right: 10px;
+}
+
+.buttonOrange span:first-child::after {
+  content: '';
+  width: 1px;
+  height: 25px;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+  margin: 0 15px;
+}
+
+.buttonGray {
+  composes: button;
+  font-size: 16px;
+  background-color: var(--grayBtn);
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.buttonGray:hover,
+.buttonGray:focus {
+  background-color: #f4f4f4;
+}
+
+.buttonBlack {
+  composes: buttonGray;
+  display: inline-block;
+  background-color: var(--black);
+  color: #fff;
+}
+
+.buttonBlack img {
+  height: 11px;
+  margin-right: 10px;
+}
+
+.buttonBlack:hover {
+  background-color: #444;
+  color: #fff;
 }

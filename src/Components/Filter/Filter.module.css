@@ -1,8 +1,12 @@
 .categories {
-    display: flex;
+  display: flex;
 }
 
-.button {
+.listItem:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* .button {
     background-color: var(--grayBtn);
     padding: 15px 30px;
     border-radius: 30px;
@@ -24,15 +28,15 @@
 .active:hover {
     background-color: var(--black);
     color: #fff;
-}
+} */
 
 @media (max-width: 1200px) {
-    .button {
-        margin-bottom: 10px;
-    }
-    .categories {
-        margin-bottom: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .button {
+    margin-bottom: 10px;
+  }
+  .categories {
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

@@ -1,0 +1,17 @@
+.cartList {
+  margin-bottom: 40px;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #f4f4f4;
+}
+
+.cartItem img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}

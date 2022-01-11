@@ -1,0 +1,151 @@
+/* ======================= Cart ====================== */
+
+.cart {
+  width: 70%;
+  margin: 0 auto;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+
+  letter-spacing: 0.01em;
+  padding-bottom: 30px;
+}
+
+.cartTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.title {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+
+  letter-spacing: 0.01em;
+
+  color: #000000;
+}
+
+.title svg {
+  position: relative;
+  top: 5px;
+  width: 33px;
+  height: 33px;
+  margin-right: 10px;
+}
+.title path {
+  stroke: var(--black);
+  stroke-width: 1.8px;
+}
+
+.clear {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #b6b6b6;
+}
+
+.clear:hover,
+.clear:active {
+  color: #000000;
+  transition: all 0.15s ease-in-out;
+}
+
+.clear:hover svg path,
+.clear:active svg path {
+  transition: all 0.15s ease-in-out;
+  stroke: #000000;
+}
+
+.clear svg {
+  margin-right: 10px;
+}
+
+.cartTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.totalCount {
+  opacity: 0.3;
+}
+
+.totalCount span,
+.totalPrice span {
+  padding: 0 5px;
+}
+
+.totalCount,
+.totalPrice {
+  font-weight: 400;
+}
+
+.totalCount span,
+.totalPrice span {
+  font-weight: 600;
+}
+
+.totalPrice span {
+  color: var(--orange);
+}
+
+.cartBottom {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.goBackBtn,
+.payNowBtn {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  height: 50px;
+  border: 1px solid #cacaca;
+  box-sizing: border-box;
+  border-radius: 30px;
+  color: #cacaca;
+  padding: 0 30px;
+  background-color: var(--orange);
+  color: #fff;
+  font-weight: 600;
+}
+
+.goBackBtn {
+  color: #cacaca;
+  background-color: #fff;
+}
+
+.goBackBtn img {
+  margin-right: 10px;
+}
+
+.payNowBtn:hover,
+.payNowBtn:active {
+  background-color: var(--darkenOrange);
+}
+
+.goBackBtn:hover,
+.goBackBtn:active {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+}

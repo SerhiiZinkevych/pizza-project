@@ -1,0 +1,82 @@
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.cartItemInfo h3 {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.cartItemInfo p {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #8d8d8d;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.minus,
+.plus,
+.remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--orange);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.minus:hover,
+.plus:hover,
+.minus:active,
+.plus:active {
+  background-color: var(--orange);
+}
+
+.minus:hover svg,
+.plus:hover svg,
+.remove:hover svg {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.minus:hover svg path,
+.plus:hover svg path,
+.minus:active svg path,
+.plus:active svg path {
+  fill: #fff;
+}
+
+.remove:hover,
+.remove:active {
+  border: 2px solid #000;
+  background-color: #000;
+}
+
+.remove:hover svg path,
+.remove:active svg path {
+  fill: #fff;
+}
+
+.remove {
+  border: 2px solid #d7d7d7;
+}
+
+.count span {
+  margin: 0 10px;
+}
