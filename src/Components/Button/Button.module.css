@@ -1,113 +1,115 @@
 .button {
-  cursor: pointer;
-  border: 1px solid transparent;
-  padding: 15px 30px;
-  border-radius: 30px;
-  text-align: center;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
 }
 
 .buttonOutline {
-  composes: button;
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
-  border: 1px solid var(--orange);
-  color: var(--orange);
-  font-weight: bold;
-  font-size: 16px;
+    composes: button;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .buttonOutline:hover,
 .buttonOutline:focus {
-  background-color: var(--orange);
-  color: #fff;
-  border: 1px solid transparent;
+    background-color: var(--orange);
+    color: #fff;
+    border: 1px solid transparent;
 }
 
 .buttonOutline:hover span,
 .buttonOutline:focus span {
-  background-color: #fff;
-  color: var(--orange);
+    background-color: #fff;
+    color: var(--orange);
 }
 
 .buttonOutline:hover svg path {
-  fill: #fff;
+    fill: #fff;
 }
 
 .buttonOutline svg {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .buttonOutline span {
-  display: inline-block;
-  background-color: var(--orange);
-  color: #fff;
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 22px;
-  margin-left: 5px;
+    display: inline-block;
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 22px;
+    margin-left: 5px;
 }
 
 .buttonOrange {
-  composes: button;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  background-color: var(--orange);
-  font-size: 17px;
-  padding: 13px 25px;
-  font-weight: bold;
+    composes: button;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: var(--orange);
+    font-size: 17px;
+    padding: 13px 25px;
+    font-weight: bold;
 }
 
 .buttonOrange:hover,
 .buttonOrange:focus {
-  background: var(--darkenOrange);
+    background: var(--darkenOrange);
 }
 
 .buttonOrange img {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .buttonOrange span:first-child::after {
-  content: '';
-  width: 1px;
-  height: 25px;
-  border-right: 1px solid rgba(255, 255, 255, 0.25);
-  margin: 0 15px;
+    content: '';
+    width: 1px;
+    height: 25px;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    margin: 0 15px;
 }
 
 .buttonGray {
-  composes: button;
-  font-size: 16px;
-  background-color: var(--grayBtn);
-  padding: 15px 30px;
-  border-radius: 30px;
-  cursor: pointer;
+    composes: button;
+    background-color: var(--grayBtn);
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .buttonGray:hover,
 .buttonGray:focus {
-  background-color: #f4f4f4;
+    background-color: #f4f4f4;
 }
 
 .buttonBlack {
-  composes: buttonGray;
-  display: inline-block;
-  background-color: var(--black);
-  color: #fff;
+    composes: button;
+    display: inline-block;
+    background-color: var(--black);
+    color: #fff;
 }
 
 .buttonBlack img {
-  height: 11px;
-  margin-right: 10px;
+    height: 11px;
+    margin-right: 10px;
 }
 
 .buttonBlack:hover {
-  background-color: #444;
-  color: #fff;
+    background-color: #444;
+    color: #fff;
 }

@@ -9,10 +9,10 @@
     cursor: pointer;
 }
 
-.sortLabel span:hover ~ .sortPopup,
+/* .sortLabel span:hover ~ .sortPopup,
 .sortLabel span:focus ~ .sortPopup {
     display: block;
-}
+} */
 
 .sortLabel img,
 .sortLabel b {
@@ -20,7 +20,7 @@
 }
 
 .sortPopup {
-    display: none;
+    /* display: none; */
     background-color: #fff;
     top: 18px;
     right: 0;
@@ -30,10 +30,10 @@
     font-weight: normal;
 }
 
-.sortPopup:hover,
+/* .sortPopup:hover,
 .sortPopup:focus {
     display: block;
-}
+} */
 
 .sortItem {
     padding: 15px 25px;
