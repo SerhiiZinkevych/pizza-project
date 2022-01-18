@@ -9,9 +9,8 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-                <Link to="/">
-                    <Logo />
-                </Link>
+                <Logo />
+
                 <Link to="/cart">
                     <Button className="buttonOrange">
                         <span>230 ₴</span>

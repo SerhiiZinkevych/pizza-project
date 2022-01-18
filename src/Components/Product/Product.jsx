@@ -4,11 +4,11 @@ import { Button, ProductSelector } from '../';
 
 import styles from './Product.module.css';
 
-export default function Product({ imageUrl, title, price }) {
+export default function Product({ imageUrl, name, price }) {
     return (
         <div className={styles.card}>
             <img className={styles.cardImage} src={imageUrl} alt="Пицца1" />
-            <h4 className={styles.cardTitle}>{title}</h4>
+            <h4 className={styles.cardTitle}>{name}</h4>
             <ProductSelector />
             <div className={styles.cardFooter}>
                 <span className={styles.price}>от {price}₴</span>

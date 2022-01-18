@@ -11,7 +11,7 @@ export default function ProductSelector() {
             </ul>
             <ul>
                 <li className={styles.active}>26 см.</li>
-                <li>30 см.</li>
+                <li className={styles.disabled}>30 см.</li>
                 <li>40 см.</li>
             </ul>
         </div>
